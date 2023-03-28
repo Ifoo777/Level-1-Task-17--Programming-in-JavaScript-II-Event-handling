@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+
+    <!-- Link Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .checked {
+        text-decoration: line-through;
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Grocery List</h2>
+
+      <input type="text" name="textValue" id="textValue" />
+      <!--Notice how the id of this element has been set so
+        that we can use the getElementById() method in main.js to access this element. -->
+      <button onclick="addItem()">Add</button>
+
+      <ul id="list"></ul>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
